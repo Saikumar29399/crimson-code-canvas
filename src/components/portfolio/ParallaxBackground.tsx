@@ -6,8 +6,8 @@ const ParallaxBackground = () => {
   const { scrollYProgress } = useScroll();
   const y1 = useTransform(scrollYProgress, [0, 1], ["0%", "-15%"]);
   const y2 = useTransform(scrollYProgress, [0, 1], ["0%", "-25%"]);
-  const opacity1 = useTransform(scrollYProgress, [0, 0.3, 0.6, 1], [0.08, 0.15, 0.12, 0.05]);
-  const opacity2 = useTransform(scrollYProgress, [0, 0.3, 0.6, 1], [0.05, 0.1, 0.15, 0.08]);
+  const opacity1 = useTransform(scrollYProgress, [0, 0.3, 0.6, 1], [0.15, 0.25, 0.2, 0.1]);
+  const opacity2 = useTransform(scrollYProgress, [0, 0.3, 0.6, 1], [0.1, 0.2, 0.25, 0.15]);
 
   return (
     <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
