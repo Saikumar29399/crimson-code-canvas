@@ -3,9 +3,9 @@ import { motion, useInView } from "framer-motion";
 
 const lines = [
   { prompt: "$ whoami", output: "Sai Kumar Kambampati" },
-  { prompt: "$ cat role.txt", output: "Java Full Stack Developer" },
-  { prompt: "$ cat about.txt", output: "Passionate developer with expertise in building scalable enterprise applications using Java, Spring Boot, React, and cloud technologies. Love automating everything and solving complex problems." },
-  { prompt: "$ ls skills/", output: "Java  Spring-Boot  React  TypeScript  AWS  Docker  Kubernetes  CI/CD  PostgreSQL  MongoDB" },
+  { prompt: "$ cat role.txt", output: "Full Stack Java Developer" },
+  { prompt: "$ cat about.txt", output: "7+ years of IT experience building scalable enterprise applications using Java, Spring Boot, Microservices, Angular, React, and AWS cloud technologies." },
+  { prompt: "$ ls skills/", output: "Java  Spring-Boot  Angular  React  AWS  Docker  Kafka  Kubernetes  Oracle  MongoDB  Jenkins" },
   { prompt: "$ echo $STATUS", output: "Open to opportunities ✨" },
 ];
 

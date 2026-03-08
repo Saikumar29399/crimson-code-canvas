@@ -4,11 +4,11 @@ import { MessageCircle, X, Send } from "lucide-react";
 
 const predefinedAnswers: Record<string, string> = {
   default: "Hi! I'm Sai's AI assistant. Ask me about his experience, skills, or projects!",
-  experience: "Sai has 6+ years of experience as a Java Full Stack Developer across enterprise, healthcare, and cloud-native projects.",
-  skills: "Sai excels in Java, Spring Boot, React, TypeScript, AWS, Docker, Kubernetes, and CI/CD pipelines.",
-  projects: "Sai has built microservices platforms, e-commerce apps, and real-time analytics dashboards. Check the Projects section!",
+  experience: "Sai has 7+ years of experience as a Full Stack Java Developer at companies including Bank of America, Bayer Crop Science, Abbott, Western Union, and Agero Inc.",
+  skills: "Sai excels in Java, Spring Boot, Microservices, Angular, React, AWS, Docker, OpenShift, Kafka, Jenkins, Oracle, MongoDB, and more.",
+  projects: "Sai has built microservices platforms for banking, event-driven systems with Kafka, and migrated 20+ services to OpenShift. Check the Projects section!",
   contact: "You can reach Sai through the Contact form on this page, or email him directly.",
-  education: "Sai holds an MS in Computer Science from UT Dallas and a B.Tech from JNTU Hyderabad.",
+  education: "Sai holds a Master of Science in Computer Science from Lamar University, Beaumont, TX.",
 };
 
 const getResponse = (msg: string): string => {

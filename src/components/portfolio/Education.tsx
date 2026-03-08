@@ -4,15 +4,9 @@ import { GraduationCap } from "lucide-react";
 const education = [
   {
     degree: "Master of Science in Computer Science",
-    school: "University of Texas at Dallas",
-    year: "2016 – 2018",
-    details: "Specialized in Software Engineering and Distributed Systems. GPA: 3.8/4.0",
-  },
-  {
-    degree: "Bachelor of Technology in Computer Science",
-    school: "JNTU Hyderabad",
-    year: "2012 – 2016",
-    details: "Focus on Data Structures, Algorithms, and Database Management Systems.",
+    school: "Lamar University, Beaumont, TX",
+    year: "",
+    details: "Specialized in Software Engineering and Distributed Systems.",
   },
 ];
 
@@ -38,7 +32,7 @@ const Education = () => (
             <div>
               <h4 className="font-semibold text-foreground">{edu.degree}</h4>
               <p className="font-mono text-sm text-primary">{edu.school}</p>
-              <p className="font-mono text-xs text-muted-foreground mt-1">{edu.year}</p>
+              {edu.year && <p className="font-mono text-xs text-muted-foreground mt-1">{edu.year}</p>}
               <p className="text-sm text-muted-foreground mt-2">{edu.details}</p>
             </div>
           </motion.div>

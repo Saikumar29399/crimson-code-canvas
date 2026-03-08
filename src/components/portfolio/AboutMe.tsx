@@ -3,8 +3,8 @@ import { motion, useInView } from "framer-motion";
 import { Calendar, Award, GraduationCap, MapPin } from "lucide-react";
 
 const stats = [
-  { icon: Calendar, label: "Years Experience", value: 6, suffix: "+" },
-  { icon: Award, label: "Certifications", value: 5, suffix: "" },
+  { icon: Calendar, label: "Years Experience", value: 7, suffix: "+" },
+  { icon: Award, label: "Companies", value: 5, suffix: "" },
   { icon: GraduationCap, label: "Degree", value: "MS", suffix: "", isText: true },
   { icon: MapPin, label: "Location", value: "USA", suffix: "", isText: true },
 ];
@@ -61,17 +61,17 @@ const AboutMe = () => (
           className="space-y-4 text-muted-foreground leading-relaxed"
         >
           <p>
-            I'm <span className="text-foreground font-semibold">Sai Kumar Kambampati</span>, a Java Full Stack Developer 
-            with a passion for building robust, scalable, and efficient enterprise applications.
+            I'm <span className="text-foreground font-semibold">Sai Kumar Kambampati</span>, a Full Stack Java Developer 
+            with 7+ years of IT experience across all phases of the Software Development Life Cycle.
           </p>
           <p>
-            With over 6 years of experience spanning backend systems with Java and Spring Boot to modern 
-            frontend development with React and TypeScript, I bring a comprehensive approach to software engineering.
+            I specialize in building scalable enterprise applications using Java, Spring Boot, and microservices architecture, 
+            with modern frontends in Angular and React. My experience spans banking, healthcare, agriculture, and financial services industries.
           </p>
           <p>
-            I specialize in designing microservices architectures, implementing CI/CD pipelines, and deploying 
-            cloud-native applications on AWS and Azure. My goal is to write clean, maintainable code that 
-            delivers real business value.
+            Proficient in cloud deployments on AWS, containerization with Docker and OpenShift, 
+            event-driven architectures with Apache Kafka, and CI/CD pipelines with Jenkins. 
+            I'm passionate about writing clean, maintainable code that delivers real business value.
           </p>
         </motion.div>
 
