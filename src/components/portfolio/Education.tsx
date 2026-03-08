@@ -8,6 +8,12 @@ const education = [
     year: "",
     details: "Specialized in Software Engineering and Distributed Systems.",
   },
+  {
+    degree: "Bachelor of Technology in Electronics and Communication Engineering",
+    school: "SRM University, Chennai, India",
+    year: "",
+    details: "Focused on Electronics, Communication Systems, and Signal Processing.",
+  },
 ];
 
 const Education = () => (
