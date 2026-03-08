@@ -21,6 +21,35 @@ const techSymbols = [
 
 const FloatingTechBackground = () => (
   <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
+    {/* Java background images */}
+    {[
+      { x: "5%", y: "8%", size: 120, dur: 24, del: 0 },
+      { x: "75%", y: "20%", size: 100, dur: 28, del: 1.5 },
+      { x: "40%", y: "45%", size: 90, dur: 22, del: 3 },
+      { x: "85%", y: "65%", size: 110, dur: 26, del: 0.5 },
+      { x: "15%", y: "75%", size: 80, dur: 30, del: 2 },
+      { x: "55%", y: "10%", size: 70, dur: 20, del: 4 },
+      { x: "30%", y: "60%", size: 95, dur: 25, del: 1 },
+    ].map((item, i) => (
+      <motion.img
+        key={`java-${i}`}
+        src={javaBg}
+        alt=""
+        className="absolute rounded-lg select-none"
+        style={{ left: item.x, top: item.y, width: item.size, height: item.size, opacity: 0.25 }}
+        animate={{
+          y: [0, -20, 0, 15, 0],
+          x: [0, 10, -8, 12, 0],
+          rotate: [0, 5, -3, 4, 0],
+        }}
+        transition={{
+          duration: item.dur,
+          delay: item.del,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+      />
+    ))}
     {techSymbols.map((item, i) => (
       <motion.span
         key={i}
