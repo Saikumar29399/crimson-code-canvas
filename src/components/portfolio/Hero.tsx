@@ -10,14 +10,14 @@ const Hero = () => {
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
       {/* Dramatic swirling light trail background */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 opacity-25">
         <img
           src={heroBg}
           alt=""
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="absolute inset-0 bg-background/40" />
+      <div className="absolute inset-0 bg-background/60" />
 
       <div className="relative z-10 text-center px-6">
         <motion.p
