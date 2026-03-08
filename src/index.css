@@ -110,6 +110,14 @@
   }
 }
 
+/* Make all primary text elements shiny and sparkling */
+.text-primary {
+  text-shadow: 0 0 6px hsl(var(--primary) / 0.8),
+               0 0 16px hsl(var(--primary) / 0.5),
+               0 0 30px hsl(var(--primary) / 0.3);
+  animation: sparkle-pulse 2.5s ease-in-out infinite;
+}
+
 @layer utilities {
   .font-mono-accent {
     font-family: 'JetBrains Mono', monospace;
