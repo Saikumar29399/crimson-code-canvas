@@ -1,43 +1,8 @@
-import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ChevronDown, Briefcase, Github, Linkedin } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
-const roles = [
-  "Java Full Stack Developer",
-  "AWS Cloud Solutions Architect",
-  "Full Stack Developer",
-  "Python Developer",
-  "DevOps Enthusiast",
-  "Problem Solver",
-];
-
 const Hero = () => {
-  const [roleIndex, setRoleIndex] = useState(0);
-  const [text, setText] = useState("");
-  const [deleting, setDeleting] = useState(false);
-
-  useEffect(() => {
-    const current = roles[roleIndex];
-    const timeout = setTimeout(
-      () => {
-        if (!deleting) {
-          setText(current.slice(0, text.length + 1));
-          if (text.length + 1 === current.length) {
-            setTimeout(() => setDeleting(true), 1500);
-          }
-        } else {
-          setText(current.slice(0, text.length - 1));
-          if (text.length === 0) {
-            setDeleting(false);
-            setRoleIndex((prev) => (prev + 1) % roles.length);
-          }
-        }
-      },
-      deleting ? 40 : 80
-    );
-    return () => clearTimeout(timeout);
-  }, [text, deleting, roleIndex]);
 
   return (
     <section
