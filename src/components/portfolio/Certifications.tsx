@@ -2,13 +2,14 @@ import { motion } from "framer-motion";
 import { Code2 } from "lucide-react";
 
 const techSkills = [
-  { category: "Languages", items: "Java/J2EE, SQL" },
+  { category: "Languages", items: "Java/J2EE, SQL, Python" },
   { category: "Web Technologies", items: "HTML, CSS, TypeScript, JavaScript, jQuery, Bootstrap, AJAX" },
   { category: "JS/TS Frameworks", items: "AngularJS, Angular 2/4/6/8/11/13, React, Node" },
   { category: "Java/J2EE", items: "Spring MVC, Spring Boot, Spring Security, Spring Data, Spring Batch, Hibernate, Struts, SOAP, REST" },
   { category: "Databases", items: "Oracle, MySQL, Postgres, SQL Server, Cassandra, MongoDB" },
-  { category: "DevOps & Cloud", items: "AWS (EC2, S3, SNS, CloudWatch), Docker, OpenShift, Jenkins, Ansible" },
+  { category: "DevOps & Cloud", items: "AWS (EC2, S3, SNS, CloudWatch, Lambda, IAM), Docker, OpenShift, Jenkins, Ansible" },
   { category: "Tools", items: "Git, Bitbucket, SVN, Maven, Gradle, Ant, JUnit, Postman, SOAPUI, Swagger" },
+  { category: "Certifications", items: "AWS Certified Solutions Architect" },
   { category: "IDEs", items: "IntelliJ, Eclipse, VS Code, Spring Tool Suite" },
 ];
 

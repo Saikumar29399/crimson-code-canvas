@@ -3,46 +3,32 @@ import { motion, useInView } from "framer-motion";
 import { Play, Square, Bug, ChevronRight, FileCode2 } from "lucide-react";
 
 const codeLines = [
-  { num: 1, content: 'package com.saikumar.portfolio;', type: 'keyword' },
-  { num: 2, content: '', type: 'blank' },
-  { num: 3, content: 'import java.util.List;', type: 'import' },
-  { num: 4, content: 'import java.util.Map;', type: 'import' },
-  { num: 5, content: '', type: 'blank' },
-  { num: 6, content: '/**', type: 'comment' },
-  { num: 7, content: ' * @author Sai Kumar Kambampati', type: 'comment' },
-  { num: 8, content: ' * Full Stack Java Developer | AWS Cloud Architect', type: 'comment' },
-  { num: 9, content: ' */', type: 'comment' },
-  { num: 10, content: 'public class Developer {', type: 'keyword' },
-  { num: 11, content: '', type: 'blank' },
-  { num: 12, content: '    private final String name = "Sai Kumar Kambampati";', type: 'string' },
-  { num: 13, content: '    private final String role = "Full Stack Java Developer";', type: 'string' },
-  { num: 14, content: '    private final int yearsExp = 7;', type: 'number' },
-  { num: 15, content: '', type: 'blank' },
-  { num: 16, content: '    private final List<String> skills = List.of(', type: 'keyword' },
-  { num: 17, content: '        "Java", "Spring Boot", "Microservices",', type: 'string' },
-  { num: 18, content: '        "Angular", "React", "AWS", "Python",', type: 'string' },
-  { num: 19, content: '        "Docker", "Kafka", "Kubernetes"', type: 'string' },
-  { num: 20, content: '    );', type: 'keyword' },
-  { num: 21, content: '', type: 'blank' },
-  { num: 22, content: '    public String getStatus() {', type: 'keyword' },
-  { num: 23, content: '        return "Open to opportunities ✨";', type: 'string' },
-  { num: 24, content: '    }', type: 'keyword' },
-  { num: 25, content: '}', type: 'keyword' },
+  { num: 1, content: '/**', type: 'comment' },
+  { num: 2, content: ' * @author Sai Kumar Kambampati', type: 'comment' },
+  { num: 3, content: ' * Full Stack Java Developer | AWS Cloud Architect', type: 'comment' },
+  { num: 4, content: ' */', type: 'comment' },
+  { num: 5, content: 'public class Developer {', type: 'keyword' },
+  { num: 6, content: '', type: 'blank' },
+  { num: 7, content: '    private final String name = "Sai Kumar Kambampati";', type: 'string' },
+  { num: 8, content: '    private final String role = "Full Stack Java Developer";', type: 'string' },
+  { num: 9, content: '    private final int yearsExp = 7;', type: 'number' },
+  { num: 10, content: '', type: 'blank' },
+  { num: 11, content: '    private final String[] skills = {', type: 'keyword' },
+  { num: 12, content: '        "Java", "Spring Boot", "Microservices",', type: 'string' },
+  { num: 13, content: '        "Angular", "React", "AWS", "Python",', type: 'string' },
+  { num: 14, content: '        "Docker", "Kafka", "Kubernetes"', type: 'string' },
+  { num: 15, content: '    };', type: 'keyword' },
+  { num: 16, content: '', type: 'blank' },
+  { num: 17, content: '    public String getStatus() {', type: 'keyword' },
+  { num: 18, content: '        return "Open to opportunities ✨";', type: 'string' },
+  { num: 19, content: '    }', type: 'keyword' },
+  { num: 20, content: '}', type: 'keyword' },
 ];
 
 const syntaxHighlight = (content: string, type: string) => {
   if (type === 'blank') return <span>&nbsp;</span>;
   if (type === 'comment') return <span className="text-muted-foreground/60 italic">{content}</span>;
-  if (type === 'import') {
-    return (
-      <span>
-        <span className="text-primary font-semibold">import</span>
-        <span className="text-foreground/80">{content.replace('import', '')}</span>
-      </span>
-    );
-  }
 
-  // Highlight keywords, strings, numbers
   const parts = content.split(/(".*?")/g);
   return (
     <span>
@@ -50,12 +36,8 @@ const syntaxHighlight = (content: string, type: string) => {
         if (part.startsWith('"') && part.endsWith('"')) {
           return <span key={i} className="text-green-400">{part}</span>;
         }
-        // Highlight Java keywords
         const highlighted = part
-          .replace(/(package|import|public|class|private|final|return|new|int|void|String|List|Map)/g,
-            '<kw>$1</kw>')
-          .replace(/(List\.of)/g, '<kw>$1</kw>');
-
+          .replace(/(public|class|private|final|return|new|int|void|String|String\[\])/g, '<kw>$1</kw>');
         return (
           <span key={i} dangerouslySetInnerHTML={{
             __html: highlighted
@@ -132,7 +114,6 @@ const TerminalIntro = () => {
 
           {/* Code Editor */}
           <div className="flex">
-            {/* Line Numbers */}
             <div className="py-4 px-2 bg-secondary/20 border-r border-border text-right select-none min-w-[3rem]">
               {codeLines.slice(0, visibleLines).map((line) => (
                 <div key={line.num} className="text-xs font-mono text-muted-foreground/40 leading-6 px-1">
@@ -140,8 +121,6 @@ const TerminalIntro = () => {
                 </div>
               ))}
             </div>
-
-            {/* Code Content */}
             <div className="py-4 px-4 flex-1 overflow-x-auto">
               {codeLines.slice(0, visibleLines).map((line, i) => (
                 <motion.div
@@ -173,26 +152,14 @@ const TerminalIntro = () => {
                 <span className="text-xs font-mono text-muted-foreground">Console Output</span>
               </div>
               <div className="p-4 font-mono text-xs space-y-1 bg-background/50">
-                <p className="text-green-400">
-                  ✓ Build successful — Developer.java compiled
-                </p>
+                <p className="text-green-400">✓ Build successful — Developer.java compiled</p>
                 <p className="text-muted-foreground">
                   <span className="text-primary">→</span> Running Developer.getStatus()...
                 </p>
-                <motion.p
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ delay: 0.5 }}
-                  className="text-foreground"
-                >
+                <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }} className="text-foreground">
                   Output: <span className="text-green-400">"Open to opportunities ✨"</span>
                 </motion.p>
-                <motion.p
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ delay: 1 }}
-                  className="text-muted-foreground/60"
-                >
+                <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1 }} className="text-muted-foreground/60">
                   Process finished with exit code 0
                 </motion.p>
               </div>

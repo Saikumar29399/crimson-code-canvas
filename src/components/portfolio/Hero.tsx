@@ -91,8 +91,8 @@ const Hero = () => {
             <Briefcase size={18} /> View My Work
           </button>
           <a
-            href="/resume.pdf"
-            download
+            href="/resume.docx"
+            download="SaikumarKambampati_Resume.docx"
             className="inline-flex items-center gap-2 px-6 py-3 border border-primary text-primary rounded-lg font-semibold hover:bg-primary/10 transition-colors"
           >
             <Download size={18} /> Download Resume
