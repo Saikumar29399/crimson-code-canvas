@@ -23,13 +23,13 @@ const FloatingTechBackground = () => (
     {techSymbols.map((item, i) => (
       <motion.span
         key={i}
-        className={`absolute font-mono ${item.size} text-primary/[0.06] select-none`}
+        className={`absolute font-mono ${item.size} text-primary select-none font-bold`}
         style={{ left: item.x, top: item.y }}
         animate={{
           y: [0, -30, 0, 25, 0],
           x: [0, 15, -10, 20, 0],
           rotate: [0, 8, -5, 3, 0],
-          opacity: [0.04, 0.08, 0.05, 0.09, 0.04],
+          opacity: [0.12, 0.25, 0.18, 0.3, 0.12],
         }}
         transition={{
           duration: item.duration,
