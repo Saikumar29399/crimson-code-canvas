@@ -1,59 +1,59 @@
 import { motion } from "framer-motion";
-import { Cloud, Box, FileCode, GitBranch, Code2, Activity } from "lucide-react";
+import { Cloud, Box, FileCode, GitBranch, Code2, Database } from "lucide-react";
 
 const categories = [
-  {
-    title: "Cloud",
-    icon: Cloud,
-    skills: [
-      { name: "AWS", level: 90 },
-      { name: "Azure", level: 80 },
-      { name: "GCP", level: 65 },
-    ],
-  },
-  {
-    title: "Containers",
-    icon: Box,
-    skills: [
-      { name: "Docker", level: 92 },
-      { name: "Kubernetes", level: 85 },
-      { name: "ECS/EKS", level: 78 },
-    ],
-  },
   {
     title: "Backend",
     icon: FileCode,
     skills: [
       { name: "Java/Spring Boot", level: 95 },
-      { name: "Microservices", level: 90 },
-      { name: "REST APIs", level: 92 },
+      { name: "Microservices", level: 92 },
+      { name: "Hibernate/JPA", level: 90 },
     ],
   },
   {
-    title: "CI/CD",
-    icon: GitBranch,
-    skills: [
-      { name: "Jenkins", level: 88 },
-      { name: "GitHub Actions", level: 85 },
-      { name: "Terraform", level: 80 },
-    ],
-  },
-  {
-    title: "Programming",
+    title: "Frontend",
     icon: Code2,
     skills: [
-      { name: "Java", level: 95 },
-      { name: "TypeScript", level: 85 },
-      { name: "Python", level: 75 },
+      { name: "Angular 2-13", level: 88 },
+      { name: "React/TypeScript", level: 85 },
+      { name: "HTML/CSS/JS", level: 90 },
     ],
   },
   {
-    title: "Monitoring",
-    icon: Activity,
+    title: "Cloud & DevOps",
+    icon: Cloud,
     skills: [
-      { name: "Grafana", level: 82 },
-      { name: "Prometheus", level: 78 },
-      { name: "ELK Stack", level: 75 },
+      { name: "AWS (EC2, S3, SNS)", level: 88 },
+      { name: "Docker/OpenShift", level: 85 },
+      { name: "Jenkins CI/CD", level: 88 },
+    ],
+  },
+  {
+    title: "Databases",
+    icon: Database,
+    skills: [
+      { name: "Oracle/MySQL/Postgres", level: 90 },
+      { name: "MongoDB/Cassandra", level: 82 },
+      { name: "Redis", level: 78 },
+    ],
+  },
+  {
+    title: "Messaging",
+    icon: Box,
+    skills: [
+      { name: "Apache Kafka", level: 85 },
+      { name: "RabbitMQ/ActiveMQ", level: 75 },
+      { name: "Spring Integration", level: 80 },
+    ],
+  },
+  {
+    title: "Tools & Testing",
+    icon: GitBranch,
+    skills: [
+      { name: "Git/Bitbucket/SVN", level: 90 },
+      { name: "Maven/Gradle/Ant", level: 88 },
+      { name: "JUnit/Mockito", level: 85 },
     ],
   },
 ];

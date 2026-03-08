@@ -1,27 +1,27 @@
 import { motion } from "framer-motion";
-import { Globe, ShoppingCart, BarChart3, ExternalLink, Github } from "lucide-react";
+import { Building2, Leaf, Heart, ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    icon: Globe,
-    category: "Enterprise",
-    title: "Microservices Platform",
-    description: "Built a distributed microservices platform handling 10K+ requests/sec with Spring Boot, Kafka, and Kubernetes. Includes service discovery, circuit breakers, and centralized logging.",
-    tech: ["Java", "Spring Boot", "Kafka", "Kubernetes", "PostgreSQL"],
+    icon: Building2,
+    category: "Banking",
+    title: "Enterprise Banking Microservices",
+    description: "Developed and maintained Java-based microservices architecture for enterprise banking systems at Bank of America. Migrated 20+ services to OpenShift with event-driven Kafka communication and Redis caching.",
+    tech: ["Java", "Spring Boot", "Kafka", "OpenShift", "Redis", "Oracle"],
   },
   {
-    icon: ShoppingCart,
-    category: "E-Commerce",
-    title: "Full Stack E-Commerce App",
-    description: "End-to-end e-commerce application with React frontend, Spring Boot backend, Stripe payments, and real-time inventory management.",
-    tech: ["React", "TypeScript", "Spring Boot", "Redis", "Stripe"],
+    icon: Leaf,
+    category: "Agriculture",
+    title: "Crop Science Platform",
+    description: "Built interactive Angular 13 frontends and Spring Boot microservices for inventory event processing at Bayer Crop Science. Integrated AWS services and secured APIs with JWT authentication.",
+    tech: ["Angular 13", "Spring Boot", "Kafka", "AWS", "Docker", "MongoDB"],
   },
   {
-    icon: BarChart3,
-    category: "Data",
-    title: "Real-Time Analytics Dashboard",
-    description: "Dashboard for monitoring application metrics and KPIs with real-time data streaming via WebSockets and interactive D3 visualizations.",
-    tech: ["React", "D3.js", "WebSocket", "Spring WebFlux", "MongoDB"],
+    icon: Heart,
+    category: "Healthcare",
+    title: "Healthcare Data Management",
+    description: "Developed microservices-based APIs at Abbott connecting to Postgres and MongoDB. Converted monolithic application to microservices architecture with Docker and AWS EC2 deployments.",
+    tech: ["Angular 9", "Spring Boot", "Postgres", "MongoDB", "Docker", "AWS"],
   },
 ];
 
