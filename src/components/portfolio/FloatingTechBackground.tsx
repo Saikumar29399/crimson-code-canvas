@@ -52,7 +52,7 @@ const FloatingTechBackground = () => (
     ].map((shape, i) => (
       <motion.div
         key={`shape-${i}`}
-        className="absolute rounded-full border border-primary/[0.04]"
+        className="absolute rounded-full border-2 border-primary/20"
         style={{
           width: shape.w,
           height: shape.h,
@@ -87,9 +87,9 @@ const FloatingTechBackground = () => (
           x2={line.x2}
           y2={line.y2}
           stroke="hsl(var(--primary))"
-          strokeWidth="0.5"
-          strokeOpacity="0.04"
-          animate={{ strokeOpacity: [0.02, 0.06, 0.02] }}
+          strokeWidth="1.5"
+          strokeOpacity="0.15"
+          animate={{ strokeOpacity: [0.1, 0.25, 0.1] }}
           transition={{
             duration: line.dur,
             delay: line.del,
