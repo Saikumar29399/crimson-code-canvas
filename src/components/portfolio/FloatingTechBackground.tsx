@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import javaBg from "@/assets/java-bg.png";
 
 const techSymbols = [
   { text: "{ }", size: "text-2xl", x: "5%", y: "10%", duration: 18, delay: 0 },
