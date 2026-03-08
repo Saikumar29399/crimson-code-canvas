@@ -12,14 +12,14 @@ const ResumeSection = () => (
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="/resume.pdf"
-            download
+            href="/resume.docx"
+            download="SaikumarKambampati_Resume.docx"
             className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors glow-card"
           >
-            <Download size={18} /> Download PDF
+            <Download size={18} /> Download Resume
           </a>
           <a
-            href="/resume.pdf"
+            href="https://docs.google.com/gview?url=https://id-preview--58caf5b1-1cd4-430a-b154-8bf943ff9bfd.lovable.app/resume.docx&embedded=true"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 border border-primary text-primary rounded-lg font-semibold hover:bg-primary/10 transition-colors"
