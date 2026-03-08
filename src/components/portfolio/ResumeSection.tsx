@@ -1,6 +1,12 @@
 import { motion } from "framer-motion";
 import { Download, Eye } from "lucide-react";
 
+// GitHub raw URL — update this when you upload a new resume
+const RESUME_RAW_URL =
+  "https://raw.githubusercontent.com/Saikumar29399/SaiKumarKampampatiResume/main/SaikumarResume38.docx";
+
+const RESUME_VIEW_URL = `https://docs.google.com/gview?url=${encodeURIComponent(RESUME_RAW_URL)}&embedded=true`;
+
 const ResumeSection = () => (
   <section id="resume" className="py-20 px-6">
     <div className="container mx-auto max-w-2xl text-center">
@@ -12,19 +18,19 @@ const ResumeSection = () => (
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="/resume.docx"
-            download="SaikumarKambampati_Resume.docx"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors glow-card"
-          >
-            <Download size={18} /> Download Resume
-          </a>
-          <a
-            href="https://docs.google.com/gview?url=https://id-preview--58caf5b1-1cd4-430a-b154-8bf943ff9bfd.lovable.app/resume.docx&embedded=true"
+            href={RESUME_VIEW_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 border border-primary text-primary rounded-lg font-semibold hover:bg-primary/10 transition-colors"
           >
-            <Eye size={18} /> View Online
+            <Eye size={18} /> View Resume
+          </a>
+          <a
+            href={RESUME_RAW_URL}
+            download="SaikumarKambampati_Resume.docx"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors glow-card"
+          >
+            <Download size={18} /> Download Resume
           </a>
         </div>
       </motion.div>

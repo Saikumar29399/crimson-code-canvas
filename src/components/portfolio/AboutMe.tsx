@@ -64,7 +64,7 @@ const AboutMe = () => (
             I am a <span className="text-foreground font-semibold">Software Engineer</span> with over 7 years of experience building scalable enterprise applications using Java, Spring Boot, and Microservices architecture. I specialize in designing and developing high-performance backend systems, building RESTful APIs, and implementing event-driven architectures using technologies like Apache Kafka.
           </p>
           <p>
-            Currently working at <span className="text-foreground font-semibold">Bank of America</span>, I develop and optimize distributed microservices that support large-scale financial systems. My work focuses on performance optimization, cloud-native architecture, containerization, and system reliability, including leading migrations of legacy systems to OpenShift container platforms.
+            In my current role at a <span className="text-foreground font-semibold">leading Fortune 500 financial institution</span>, I develop and optimize distributed microservices that support large-scale enterprise systems. My work focuses on performance optimization, cloud-native architecture, containerization, and system reliability, including leading migrations of legacy systems to modern container platforms.
           </p>
           <p>
             I enjoy solving complex engineering problems, improving system scalability, and building reliable platforms that power real-world applications. My experience spans backend engineering, cloud deployment, distributed systems, and performance tuning, enabling me to deliver robust and efficient solutions in fast-paced enterprise environments.
