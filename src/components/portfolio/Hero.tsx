@@ -39,8 +39,7 @@ const Hero = () => {
           transition={{ delay: 0.6 }}
           className="font-mono text-xl md:text-2xl text-muted-foreground h-8 mb-8"
         >
-          <span className="text-primary">{">"}</span> {text}
-          <span className="terminal-cursor" />
+          <span className="text-primary">{">"}</span> Full Stack Developer
         </motion.div>
 
         <motion.div
