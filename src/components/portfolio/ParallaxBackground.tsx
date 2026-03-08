@@ -1,34 +1,34 @@
 import { useScroll, useTransform, motion } from "framer-motion";
-import parallax1 from "@/assets/parallax-1.jpg";
-import parallax2 from "@/assets/parallax-2.jpg";
-import parallax3 from "@/assets/parallax-3.jpg";
+import bgScroll1 from "@/assets/bg-scroll-1.jpg";
+import bgScroll2 from "@/assets/bg-scroll-2.jpg";
 
 const ParallaxBackground = () => {
   const { scrollYProgress } = useScroll();
-  const y1 = useTransform(scrollYProgress, [0, 1], ["0%", "-10%"]);
-  const y2 = useTransform(scrollYProgress, [0, 1], ["0%", "-20%"]);
-  const y3 = useTransform(scrollYProgress, [0, 1], ["0%", "-30%"]);
+  const y1 = useTransform(scrollYProgress, [0, 1], ["0%", "-15%"]);
+  const y2 = useTransform(scrollYProgress, [0, 1], ["0%", "-25%"]);
+  const opacity1 = useTransform(scrollYProgress, [0, 0.3, 0.6, 1], [0.08, 0.15, 0.12, 0.05]);
+  const opacity2 = useTransform(scrollYProgress, [0, 0.3, 0.6, 1], [0.05, 0.1, 0.15, 0.08]);
 
   return (
     <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
+      {/* Primary scroll background - swirling light trails */}
       <motion.div
-        style={{ y: y1 }}
-        className="absolute inset-0 opacity-10"
+        style={{ y: y1, opacity: opacity1 }}
+        className="absolute inset-0"
       >
-        <img src={parallax1} alt="" className="w-full h-[120%] object-cover" />
+        <img src={bgScroll1} alt="" className="w-full h-[130%] object-cover" />
       </motion.div>
+
+      {/* Secondary scroll background */}
       <motion.div
-        style={{ y: y2 }}
-        className="absolute inset-0 opacity-5"
+        style={{ y: y2, opacity: opacity2 }}
+        className="absolute inset-0"
       >
-        <img src={parallax2} alt="" className="w-full h-[130%] object-cover" />
+        <img src={bgScroll2} alt="" className="w-full h-[140%] object-cover" />
       </motion.div>
-      <motion.div
-        style={{ y: y3 }}
-        className="absolute inset-0 opacity-[0.03]"
-      >
-        <img src={parallax3} alt="" className="w-full h-[140%] object-cover" />
-      </motion.div>
+
+      {/* Gradient overlay for depth */}
+      <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-transparent to-background/50" />
     </div>
   );
 };
