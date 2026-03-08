@@ -84,9 +84,10 @@ const Contact = () => {
           </div>
           <button
             type="submit"
-            className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors glow-card"
+            disabled={loading}
+            className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors glow-card disabled:opacity-50"
           >
-            <Send size={18} /> Send Message
+            <Send size={18} /> {loading ? "Sending..." : "Send Message"}
           </button>
         </motion.form>
       </div>
