@@ -23,13 +23,13 @@ const FloatingTechBackground = () => (
     {techSymbols.map((item, i) => (
       <motion.span
         key={i}
-        className={`absolute font-mono ${item.size} text-primary/[0.06] select-none`}
+        className={`absolute font-mono ${item.size} text-primary select-none font-bold`}
         style={{ left: item.x, top: item.y }}
         animate={{
           y: [0, -30, 0, 25, 0],
           x: [0, 15, -10, 20, 0],
           rotate: [0, 8, -5, 3, 0],
-          opacity: [0.04, 0.08, 0.05, 0.09, 0.04],
+          opacity: [0.12, 0.25, 0.18, 0.3, 0.12],
         }}
         transition={{
           duration: item.duration,
@@ -52,7 +52,7 @@ const FloatingTechBackground = () => (
     ].map((shape, i) => (
       <motion.div
         key={`shape-${i}`}
-        className="absolute rounded-full border border-primary/[0.04]"
+        className="absolute rounded-full border-2 border-primary/20"
         style={{
           width: shape.w,
           height: shape.h,
@@ -87,9 +87,9 @@ const FloatingTechBackground = () => (
           x2={line.x2}
           y2={line.y2}
           stroke="hsl(var(--primary))"
-          strokeWidth="0.5"
-          strokeOpacity="0.04"
-          animate={{ strokeOpacity: [0.02, 0.06, 0.02] }}
+          strokeWidth="1.5"
+          strokeOpacity="0.15"
+          animate={{ strokeOpacity: [0.1, 0.25, 0.1] }}
           transition={{
             duration: line.dur,
             delay: line.del,
