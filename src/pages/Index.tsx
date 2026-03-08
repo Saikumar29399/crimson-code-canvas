@@ -1,12 +1,41 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navbar from "@/components/portfolio/Navbar";
+import ScrollProgress from "@/components/portfolio/ScrollProgress";
+import ParallaxBackground from "@/components/portfolio/ParallaxBackground";
+import Hero from "@/components/portfolio/Hero";
+import TerminalIntro from "@/components/portfolio/TerminalIntro";
+import AboutMe from "@/components/portfolio/AboutMe";
+import Skills from "@/components/portfolio/Skills";
+import Experience from "@/components/portfolio/Experience";
+import Projects from "@/components/portfolio/Projects";
+import Education from "@/components/portfolio/Education";
+import Testimonials from "@/components/portfolio/Testimonials";
+import Certifications from "@/components/portfolio/Certifications";
+import ResumeSection from "@/components/portfolio/ResumeSection";
+import Contact from "@/components/portfolio/Contact";
+import Footer from "@/components/portfolio/Footer";
+import ChatbotWidget from "@/components/portfolio/ChatbotWidget";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <div className="relative min-h-screen bg-background text-foreground">
+      <ParallaxBackground />
+      <ScrollProgress />
+      <Navbar />
+      <div className="relative z-10">
+        <Hero />
+        <TerminalIntro />
+        <AboutMe />
+        <Skills />
+        <Experience />
+        <Projects />
+        <Education />
+        <Testimonials />
+        <Certifications />
+        <ResumeSection />
+        <Contact />
+        <Footer />
       </div>
+      <ChatbotWidget />
     </div>
   );
 };
