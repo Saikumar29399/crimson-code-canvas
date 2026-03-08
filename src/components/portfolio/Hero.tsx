@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ChevronDown, Briefcase, Github, Linkedin } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
+import heroBg from "@/assets/hero-bg.png";
 
 const Hero = () => {
 
@@ -9,11 +9,15 @@ const Hero = () => {
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${heroBg})` }}
-      />
-      <div className="absolute inset-0 bg-background/70" />
+      {/* Dramatic swirling light trail background */}
+      <div className="absolute inset-0">
+        <img
+          src={heroBg}
+          alt=""
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="absolute inset-0 bg-background/40" />
 
       <div className="relative z-10 text-center px-6">
         <motion.p
