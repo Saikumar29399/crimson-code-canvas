@@ -61,13 +61,13 @@ const AboutMe = () => (
           className="space-y-4 text-muted-foreground leading-relaxed"
         >
           <p>
-            I am a <span className="text-foreground font-semibold">Software Engineer</span> with over 7 years of experience building scalable enterprise applications using Java, Spring Boot, and Microservices architecture. I specialize in designing and developing high-performance backend systems, building RESTful APIs, and implementing event-driven architectures using technologies like Apache Kafka.
+            I am a <span className="text-foreground font-semibold">Software Engineer</span> with over 7 years of experience building scalable enterprise applications using Java, Spring Boot, and Microservices architecture. I specialize in designing and developing high-performance backend systems, building RESTful APIs, and implementing event-driven architectures using technologies such as Apache Kafka.
           </p>
           <p>
-            In my current role at a <span className="text-foreground font-semibold">leading Fortune 500 financial institution</span>, I develop and optimize distributed microservices that support large-scale enterprise systems. My work focuses on performance optimization, cloud-native architecture, containerization, and system reliability, including leading migrations of legacy systems to modern container platforms.
+            I have extensive experience developing and optimizing <span className="text-foreground font-semibold">distributed microservices</span> that support large-scale enterprise platforms. My work focuses on performance optimization, cloud-native architecture, containerization, and system reliability, including migrating legacy systems to modern container platforms like OpenShift.
           </p>
           <p>
-            I enjoy solving complex engineering problems, improving system scalability, and building reliable platforms that power real-world applications. My experience spans backend engineering, cloud deployment, distributed systems, and performance tuning, enabling me to deliver robust and efficient solutions in fast-paced enterprise environments.
+            I enjoy solving complex engineering problems, improving system scalability, and building reliable platforms that power real-world applications. My experience spans backend engineering, cloud deployment, distributed systems, and performance tuning, enabling me to deliver robust, efficient, and scalable solutions in fast-paced development environments.
           </p>
         </motion.div>
 
