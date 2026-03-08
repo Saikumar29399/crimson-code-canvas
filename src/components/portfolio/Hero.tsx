@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { ChevronDown, Download, Briefcase } from "lucide-react";
+import { ChevronDown, Download, Briefcase, Github, Linkedin } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const roles = [
   "Java Full Stack Developer",
+  "AWS Cloud Solutions Architect",
   "Backend Engineer",
-  "Cloud Architect",
+  "Python Developer",
   "DevOps Enthusiast",
   "Problem Solver",
 ];
@@ -95,6 +96,31 @@ const Hero = () => {
             className="inline-flex items-center gap-2 px-6 py-3 border border-primary text-primary rounded-lg font-semibold hover:bg-primary/10 transition-colors"
           >
             <Download size={18} /> Download Resume
+          </a>
+        </motion.div>
+
+        {/* Social Links */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1 }}
+          className="flex gap-4 justify-center mt-8"
+        >
+          <a
+            href="https://github.com/Saikumar29399"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 rounded-full border border-border text-muted-foreground hover:text-primary hover:border-primary transition-colors"
+          >
+            <Github size={20} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/saikumar-kambampati-88437227a/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 rounded-full border border-border text-muted-foreground hover:text-primary hover:border-primary transition-colors"
+          >
+            <Linkedin size={20} />
           </a>
         </motion.div>
       </div>
