@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Send, Mail, User, MessageSquare } from "lucide-react";
+import { Send, Mail, User, MessageSquare, Phone, MapPin } from "lucide-react";
 import { toast } from "sonner";
 
 const Contact = () => {
