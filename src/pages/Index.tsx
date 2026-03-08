@@ -1,6 +1,7 @@
 import Navbar from "@/components/portfolio/Navbar";
 import ScrollProgress from "@/components/portfolio/ScrollProgress";
 import ParallaxBackground from "@/components/portfolio/ParallaxBackground";
+import FloatingTechBackground from "@/components/portfolio/FloatingTechBackground";
 import Hero from "@/components/portfolio/Hero";
 import TerminalIntro from "@/components/portfolio/TerminalIntro";
 import AboutMe from "@/components/portfolio/AboutMe";
@@ -19,6 +20,7 @@ const Index = () => {
   return (
     <div className="relative min-h-screen bg-background text-foreground">
       <ParallaxBackground />
+      <FloatingTechBackground />
       <ScrollProgress />
       <Navbar />
       <div className="relative z-10">
