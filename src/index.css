@@ -8,6 +8,7 @@
   :root {
     --background: 0 0% 4%;
     --foreground: 0 0% 92%;
+    --primary-bright: 20 100% 60%;
 
     --card: 0 0% 7%;
     --card-foreground: 0 0% 92%;
