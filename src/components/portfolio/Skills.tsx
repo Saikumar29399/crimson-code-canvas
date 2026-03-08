@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Cloud, Box, FileCode, GitBranch, Code2, Database } from "lucide-react";
+import { Cloud, Box, FileCode, GitBranch, Code2, Database, Server, Terminal } from "lucide-react";
 
 const categories = [
   {
@@ -7,8 +7,17 @@ const categories = [
     icon: FileCode,
     skills: [
       { name: "Java/Spring Boot", level: 95 },
-      { name: "Microservices", level: 92 },
+      { name: "Microservices/REST", level: 92 },
       { name: "Hibernate/JPA", level: 90 },
+    ],
+  },
+  {
+    title: "Python Backend",
+    icon: Terminal,
+    skills: [
+      { name: "Python/Flask", level: 82 },
+      { name: "Django/FastAPI", level: 78 },
+      { name: "Pandas/NumPy", level: 75 },
     ],
   },
   {
@@ -21,12 +30,21 @@ const categories = [
     ],
   },
   {
-    title: "Cloud & DevOps",
+    title: "AWS & Cloud",
     icon: Cloud,
     skills: [
-      { name: "AWS (EC2, S3, SNS)", level: 88 },
-      { name: "Docker/OpenShift", level: 85 },
+      { name: "AWS Solutions Arch.", level: 90 },
+      { name: "EC2/S3/Lambda/SNS", level: 88 },
+      { name: "CloudWatch/IAM", level: 85 },
+    ],
+  },
+  {
+    title: "DevOps & Containers",
+    icon: Server,
+    skills: [
+      { name: "Docker/OpenShift", level: 88 },
       { name: "Jenkins CI/CD", level: 88 },
+      { name: "Kubernetes", level: 80 },
     ],
   },
   {
@@ -66,14 +84,14 @@ const Skills = () => (
         <h3 className="text-3xl md:text-4xl font-bold text-foreground">Tech Stack</h3>
       </motion.div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
         {categories.map((cat, ci) => (
           <motion.div
             key={cat.title}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: ci * 0.1 }}
+            transition={{ delay: ci * 0.08 }}
             className="p-6 rounded-lg bg-card border border-border glow-card"
           >
             <div className="flex items-center gap-3 mb-5">

@@ -62,16 +62,17 @@ const AboutMe = () => (
         >
           <p>
             I'm <span className="text-foreground font-semibold">Sai Kumar Kambampati</span>, a Full Stack Java Developer 
-            with 7+ years of IT experience across all phases of the Software Development Life Cycle.
+            and AWS Cloud Solutions Architect with 7+ years of IT experience across all phases of the SDLC.
           </p>
           <p>
-            I specialize in building scalable enterprise applications using Java, Spring Boot, and microservices architecture, 
-            with modern frontends in Angular and React. My experience spans banking, healthcare, agriculture, and financial services industries.
+            I specialize in building scalable enterprise applications using Java, Spring Boot, microservices, and Python backend services, 
+            with modern frontends in Angular and React. My experience spans banking, healthcare, agriculture, and financial services.
           </p>
           <p>
-            Proficient in cloud deployments on AWS, containerization with Docker and OpenShift, 
-            event-driven architectures with Apache Kafka, and CI/CD pipelines with Jenkins. 
-            I'm passionate about writing clean, maintainable code that delivers real business value.
+            As an AWS Cloud Solutions Architect, I design and deploy cloud-native architectures using EC2, S3, Lambda, 
+            SNS, CloudWatch, and IAM. Proficient in containerization with Docker/OpenShift/Kubernetes, 
+            event-driven systems with Kafka, and CI/CD with Jenkins. I also leverage Python for automation, 
+            data processing, and backend API development.
           </p>
         </motion.div>
 
