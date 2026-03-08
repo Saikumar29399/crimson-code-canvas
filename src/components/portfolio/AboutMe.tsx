@@ -61,18 +61,13 @@ const AboutMe = () => (
           className="space-y-4 text-muted-foreground leading-relaxed"
         >
           <p>
-            I'm <span className="text-foreground font-semibold">Sai Kumar Kambampati</span>, a Full Stack Java Developer 
-            and AWS Cloud Solutions Architect with 7+ years of IT experience across all phases of the SDLC.
+            I am a <span className="text-foreground font-semibold">Software Engineer</span> with over 7 years of experience building scalable enterprise applications using Java, Spring Boot, and Microservices architecture. I specialize in designing and developing high-performance backend systems, building RESTful APIs, and implementing event-driven architectures using technologies like Apache Kafka.
           </p>
           <p>
-            I specialize in building scalable enterprise applications using Java, Spring Boot, microservices, and Python backend services, 
-            with modern frontends in Angular and React. My experience spans banking, healthcare, agriculture, and financial services.
+            Currently working at <span className="text-foreground font-semibold">Bank of America</span>, I develop and optimize distributed microservices that support large-scale financial systems. My work focuses on performance optimization, cloud-native architecture, containerization, and system reliability, including leading migrations of legacy systems to OpenShift container platforms.
           </p>
           <p>
-            As an AWS Cloud Solutions Architect, I design and deploy cloud-native architectures using EC2, S3, Lambda, 
-            SNS, CloudWatch, and IAM. Proficient in containerization with Docker/OpenShift/Kubernetes, 
-            event-driven systems with Kafka, and CI/CD with Jenkins. I also leverage Python for automation, 
-            data processing, and backend API development.
+            I enjoy solving complex engineering problems, improving system scalability, and building reliable platforms that power real-world applications. My experience spans backend engineering, cloud deployment, distributed systems, and performance tuning, enabling me to deliver robust and efficient solutions in fast-paced enterprise environments.
           </p>
         </motion.div>
 

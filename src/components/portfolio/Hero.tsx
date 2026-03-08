@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { ChevronDown, Download, Briefcase, Github, Linkedin } from "lucide-react";
+import { ChevronDown, Briefcase, Github, Linkedin } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const roles = [
   "Java Full Stack Developer",
   "AWS Cloud Solutions Architect",
-  "Backend Engineer",
+  "Full Stack Developer",
   "Python Developer",
   "DevOps Enthusiast",
   "Problem Solver",
@@ -90,13 +90,6 @@ const Hero = () => {
           >
             <Briefcase size={18} /> View My Work
           </button>
-          <a
-            href="/resume.docx"
-            download="SaikumarKambampati_Resume.docx"
-            className="inline-flex items-center gap-2 px-6 py-3 border border-primary text-primary rounded-lg font-semibold hover:bg-primary/10 transition-colors"
-          >
-            <Download size={18} /> Download Resume
-          </a>
         </motion.div>
 
         {/* Social Links */}
